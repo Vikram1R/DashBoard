@@ -1,0 +1,483 @@
+/* Google Font Poppins  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+button , a {
+    cursor: pointer;
+    transition: .3s linear;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    width: 90%;
+    height: 90%;
+    background: #3a3a3a;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, .2);
+    overflow: hidden;
+    display: flex;
+}
+
+header menu , aside {
+    width: 85%;
+    height: 100%;
+    border: 1px solid #fff;
+    /* z-index: 999; */
+    background: #f6fafe;
+    padding: 25px;
+}
+
+header menu {
+    width: 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #1b2c56;
+    z-index: 999;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, .5);
+}
+
+
+
+header menu .logo_list .logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+header menu .logo_list ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+header menu .logo_list ul li {
+    padding: 15px 5px;
+}
+header menu .logo_list ul li a {
+    position: relative;
+    color: #bebebe;
+    font-size: 13px;
+    font-weight: 500;
+}
+header menu .logo_list ul li a i {
+    margin-right: 10px;
+}
+header menu .logo_list ul li a:hover {
+    color: #fff;
+}
+
+/* Active Class Start  */
+
+header menu .logo_list ul li .a_active {
+    color: #fff;
+}
+
+/* Active Class End  */
+
+header menu button {
+    background: none;
+    outline: none;
+    border: none;
+    color: #bebebe;
+    font-size: 13px;
+    font-weight: 600;
+}
+header menu button i {
+    margin-right: 10px;
+}
+header menu button:hover  {
+    color: #fff;
+}
+
+
+header aside nav {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header aside nav .left_nav , .right_nav {
+    display: flex;
+    align-items: center;
+}
+header aside nav .left_nav .custom_calendar {
+    position: relative;
+    margin-left: 20px;
+    top: 2px;
+    color: #3f3f3f;
+}
+
+header aside nav .left_nav .custom_calendar .date{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+header aside nav .left_nav .custom_calendar .date i:nth-child(1){
+    margin-right: 5px;
+}
+
+header aside nav .right_nav .search input{
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    outline: none;
+    margin-right: 5px;
+}
+
+
+header aside nav .right_nav .bi-bell-fill{
+    margin: 0 15px;
+}
+header aside nav .right_nav .profile{
+    display: flex;
+    align-items: center;
+}
+header aside nav .right_nav .profile img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+header aside nav .right_nav .profile h6{
+    margin-left: 10px;
+}
+
+/* Start Data Cards  */
+
+header aside .data-card {
+    width: 100%;
+    height: 11vh;
+    /* border: 1px solid #000; */
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header aside .data-card .card {
+    position: relative;
+    width: 24.5%;
+    height: 65px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, .05);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+header aside .data-card .card .icon {
+    width: 35px;
+    height: 35px;
+    background: #f6fafe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header aside .data-card .card .cont {
+    margin-left: 13px;
+}
+header aside .data-card .card .cont h1 {
+    font-size: 18px;
+}
+header aside .data-card .card .cont h1 sub {
+    font-size: 12px;
+    color: #008000b5;
+    position: relative;
+    top: -5px;
+}
+header aside .data-card .card:nth-child(2) .cont h1 sub {
+    color: red;
+}
+header aside .data-card .card .cont h1 sub i {
+    margin-right: 3px;
+}
+header aside .data-card .card .cont h5 {
+    font-size: 12px;
+    color: rgb(0, 0, 0, .5);
+    position: relative;
+    top: -5px;
+}
+
+
+/* Map Start  */
+
+header aside .map_data {
+    width: 100%;
+    margin-top: 10px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    /* padding: 50px; */
+}
+header aside .map_data .left , .right {
+    width: 28.5%;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+header aside .map_data .left {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap;
+}
+header aside .map_data .left .map , .right_sec {
+    width: 65%;
+    height: 260px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+header aside .map_data .left  .right_sec {
+    width: 31%;
+    height: 290px;
+    /* border: 1px solid #000; */
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, .2);
+    padding: 15px;
+}
+header aside .map_data .left  .map{
+    top: 15px;
+}
+header aside .map_data .left  .map::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, .2);
+    padding: 10px;
+    top: -15px;
+}
+header aside .map_data .left .right_sec .head{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+header aside .map_data .left .right_sec .age{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 25px;
+}
+header aside .map_data .left .right_sec .age svg circle{
+   stroke-dasharray: 248;
+   stroke: #11131b;
+   stroke-width: 8px;
+   fill: none;
+   stroke-linecap: round;
+   transform: translate(40% , 23%);
+   stroke-dashoffset: calc((248 - (248 *100) / 100));
+   opacity: .1;
+}
+header aside .map_data .left .right_sec .age svg circle:nth-child(3){
+   stroke: #407fb9;
+   opacity: 1;
+   stroke-dashoffset: calc((248 - (248 *60) / 100));
+}
+header aside .map_data .left .right_sec .age svg circle:nth-child(2){
+    stroke-dasharray: 372;
+    stroke: #3c4b74;
+    transform: translate(31% , 10%);
+    stroke-dashoffset: calc((372 - (372 *100) / 100));
+    opacity: .1;
+}
+header aside .map_data .left .right_sec .age svg circle:nth-child(4){
+    stroke-dasharray: 372;
+    stroke: #3c4b74;
+    transform: translate(31% , 10%);
+    stroke-dashoffset: calc((372 - (372 * 75) / 100));
+    opacity: 1;
+}
+
+
+header aside .map_data .left .right_sec .det {
+    margin-top: 25px;
+}
+header aside .map_data .left .right_sec .det h6 {
+    position: relative;
+    left: 25px;
+}
+header aside .map_data .left .right_sec .det h6::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #11131b;
+    top: 5px;
+    left: -15px;
+    border-radius: 50%;
+}
+header aside .map_data .left .right_sec .det h6:nth-child(2)::before {
+    background: #3c4b74;
+}
+header aside .map_data .left .last_left {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    /* border: 1px solid #000; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+header aside .map_data .left .last_left .left_left_bx , .left_right_bx {
+    width: 58%;
+    height: 160px;
+    /* border: 1px solid #000; */
+    /* height: auto; */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, .2);
+    padding: 10px 15px;
+    background: #fff;
+}
+header aside .map_data .left .last_left .left_left_bx  {
+    width: 40%;
+}
+header aside .map_data .left .last_left  li {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+header aside .map_data .left .last_left  li:nth-child(1) {
+    margin-top: 0px;
+}
+header aside .map_data .left .last_left  li i {
+    font-size: 11px;
+    margin-right: 5px;
+    color: #0066c5;
+    padding: 3px 5px;
+    background: #bcdfff;
+    border-radius: 50%;
+}
+header aside .map_data .left .last_left  li h5 , a {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+header aside .map_data .left .last_left  li  a {
+    font-size: 11px;
+    color: #000;
+    transition: .3s linear;
+}
+header aside .map_data .left .last_left  li  a:hover {
+    color: #0063c0;
+}
+header aside .map_data .right .right_list {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 20px rgb(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 15px;
+}
+header aside .map_data .right .right_list .head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header aside .map_data .right .right_list .main_chart {
+    width: 95%;
+    height: 170px;
+    margin: auto;
+    overflow: hidden;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+header aside .map_data .right .right_list .main_chart .chart {
+    width: 121%;
+    height: 100%;
+    transform: translate(-12%);
+    position: relative;
+}
+header aside .map_data .right .right_list .main_chart .chart::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    background: #fff;
+    right: 0;
+    bottom: 3%;
+    z-index: 999;
+}
+header aside .map_data .right .right_list ul{
+   width: 100%;
+   height: 230px;
+   overflow: auto;
+   /* border: 1px solid #000; */
+   padding: 0 20px;
+}
+header aside .map_data .right .right_list ul::-webkit-scrollbar{
+   width: 5px;
+   background: rgb(0, 0, 0, .1);
+   border-radius: 20px;
+}
+header aside .map_data .right .right_list ul::-webkit-scrollbar-thumb{
+   width: 5px;
+   background: rgb(0, 0, 0, .4);
+   border-radius: 20px;
+}
+header aside .map_data .right .right_list ul li{
+   width: 100%;
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+header aside .map_data .right .right_list ul li .profile_det{
+   display: flex;
+   align-items: center;
+}
+header aside .map_data .right .right_list ul li .profile_det img{
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+}
+header aside .map_data .right .right_list ul li .profile_det .title_date {
+ margin-left: 10px;  
+}
+header aside .map_data .right .right_list ul li .profile_det .title_date p  {
+ font-size: 11px;
+ line-height: 12px;
+}
+header aside .map_data .right .right_list ul li button  {
+ border: none;
+ outline: none;
+ padding: 3px 12px 1px 12px;
+ border-radius: 8px;
+ background: rgb(27, 44, 86 , .3);
+ font-family: 'Poppins', sans-serif;
+ font-size: 12px;
+ color: #fff;
+ text-align: center;
+ cursor: pointer;
+ transition: .3s linear;
+}
+header aside .map_data .right .right_list ul li button:hover  {
+ background: #1b2c56;
+}

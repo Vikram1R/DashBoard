@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Control</title>
+</head>
+<body>
+    <header>
+        <!-- Menu Start  -->
+        <menu>
+            <!-- logo  -->
+            <div class="logo_list">
+                <a href="/" class="logo">Control</a>
+                <ul>
+                    <li>
+                        <a href="#" class="a_active"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-stopwatch-fill"></i> Schedule </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-file-earmark-text-fill"></i> Reports</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-send-fill"></i> Messages</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-question-circle-fill"></i> FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-gear-fill"></i> Settings</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Logout Start  -->
+            <button><i class="bi bi-power"></i> Logout</button>
+            <!-- Logout End -->
+        </menu>
+
+        <!-- Start aside  -->
+        <aside>
+            <nav>
+                <div class="left_nav">
+                    <h1>Ayalytics Overview</h1>
+                    <div class="custom_calendar">
+                        <h6 class="date"><i class="bi bi-calendar-week-fill"></i> 27 Oct, 2023 - 13 Nov, 2023 <i class="bi bi-caret-down-fill"></i></h6>
+                    </div>
+                </div>
+                <div class="right_nav">
+                    <div class="search">
+                        <input type="text" placeholder="Search...">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <i class="bi bi-bell-fill"></i>
+                    <div class="profile">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg" alt="">
+                        <h6>Hello, Vikram</h6>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- Start Data Cards  -->
+            <div class="data-card">
+                <div class="card">
+                    <div class="icon"><i class="bi bi-phone-fill"></i></div>
+                    <div class="cont">
+                        <h1>78455 <sub><i class="bi bi-arrow-up-right"></i>1.3%</sub></h1>
+                        <h5>Mobile</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon"><i class="bi bi-laptop-fill"></i></div>
+                      <div class="cont">
+                        <h1>94125 <sub><i class="bi bi-arrow-down-right"></i>1.3%</sub></h1>
+                        <h5>Computer</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon"><i class="bi bi-xbox"></i></div>
+                      <div class="cont">
+                        <h1>62354 <sub><i class="bi bi-arrow-up-right"></i>1.3%</sub></h1>
+                        <h5>xbox</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon"><i class="bi bi-playstation"></i></div>
+                      <div class="cont">
+                        <h1>46850 <sub><i class="bi bi-arrow-up-right"></i>1.3%</sub></h1>
+                        <h5>Sony Play Station</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Start  -->
+            <div class="map_data">
+                <div class="left">
+                    <div class="map" id="map"></div>
+                    <div class="right_sec">
+                        <div class="head">
+                            <h5>Users by gender</h5>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div class="age">
+                            <svg>
+                                <circle cx="30" cy="30" r="40" />
+                                <circle cx="50" cy="50" r="60" />
+                                <circle cx="30" cy="30" r="40" />
+                                <circle cx="50" cy="50" r="60" />
+                            </svg>
+                        </div>
+
+                        <div class="det">
+                            <h6>Male Gender (75%)</h6>
+                            <h6>Female Gender (60%)</h6>
+                        </div>
+                    </div>
+
+                    <div class="last_left">
+                        <div class="left_left_bx">
+                            <li><h5>Social</h5><a href="#">More</a></li>
+                            <li><span><i class="bi bi-facebook"></i> Facebook</span><span>35%</span></li>
+                            <li><span><i class="bi bi-youtube"></i> Youtube</span><span>45%</span></li>
+                        </div>
+                        <div class="left_right_bx">
+                            <li><h5>Activity</h5><a href="#">More</a></li>
+                            <li><span><i class="bi bi-facebook"></i> <b>210 new users</b> have played <b>Ludo world</b></span></li>
+                            <li><span><i class="bi bi-youtube"></i> <b>1200 new users</b> subscribed to the  <b>AI PROJECT RED</b></span></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right_list">
+                        <div class="head">
+                            <h5>Ad requests</h5>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+
+                        <div class="main_chart">
+                            <div class="chart" id="chart"></div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>RaaZ</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Angelina</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Henry</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Peter Parker</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Robert Downey</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Mark Ruffalo</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Chris Evans</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Tom</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Tacaz</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Ruppo</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Levinho</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>RaaZ Singh</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Aahan</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                            <li>
+                                <div class="profile_det">
+                                    <img src="https://yt3.googleusercontent.com/JSQratIjX8JcrLdRHR-9DtEQMvdYv5_EAyWYpEwh3vVLPJEgkxI7aUriWEuL9hAhMB8XIGnXtE4=s900-c-k-c0x00ffffff-no-rj" alt="">
+                                    <div class="title_date">
+                                        <h6>Redoy</h6>
+                                        <p>16 Oct 2023</p>
+                                    </div>
+                                </div>
+                                <button>$348</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </header>
+
+
+    <!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+
+<!-- Chart code -->
+<script>
+    am5.ready(function() {
+    
+    var data = [
+      {
+        id: "US",
+        name: "United States",
+        value: 100
+      }, {
+        id: "GB",
+        name: "United Kingdom",
+        value: 100
+      }, {
+        id: "CN",
+        name: "China",
+        value: 100
+      }, {
+        id: "IN",
+        name: "India",
+        value: 100
+      }, {
+        id: "AU",
+        name: "Australia",
+        value: 100
+      }, {
+        id: "CA",
+        name: "Canada",
+        value: 100
+      }, {
+        id: "BR",
+        name: "Brasil",
+        value: 100
+      }, {
+        id: "ZA",
+        name: "South Africa",
+        value: 100
+      }
+    ];
+    
+    var root = am5.Root.new("map");
+    root.setThemes([am5themes_Animated.new(root)]);
+    
+    var chart = root.container.children.push(am5map.MapChart.new(root, {}));
+    
+    var polygonSeries = chart.series.push(
+      am5map.MapPolygonSeries.new(root, {
+        geoJSON: am5geodata_worldLow,
+        exclude: ["AQ"]
+      })
+    );
+    
+    var bubbleSeries = chart.series.push(
+      am5map.MapPointSeries.new(root, {
+        valueField: "value",
+        calculateAggregates: true,
+        polygonIdField: "id"
+      })
+    );
+    
+    var circleTemplate = am5.Template.new({});
+    
+    bubbleSeries.bullets.push(function(root, series, dataItem) {
+      var container = am5.Container.new(root, {});
+    
+      var circle = container.children.push(
+        am5.Circle.new(root, {
+          radius: 20,
+          fillOpacity: 0.7,
+          fill: am5.color(0x1b2c56),
+          cursorOverStyle: "pointer",
+          tooltipText: `{name}: [bold]{value}[/]`
+        }, circleTemplate)
+      );
+    
+      var countryLabel = container.children.push(
+        am5.Label.new(root, {
+          text: "{name}",
+          paddingLeft: 5,
+          populateText: true,
+          fontWeight: "bold",
+          fontSize: 13,
+          centerY: am5.p50
+        })
+      );
+    
+      circle.on("radius", function(radius) {
+        countryLabel.set("x", radius);
+      })
+    
+      return am5.Bullet.new(root, {
+        sprite: container,
+        dynamic: true
+      });
+    });
+    
+    bubbleSeries.bullets.push(function(root, series, dataItem) {
+      return am5.Bullet.new(root, {
+        sprite: am5.Label.new(root, {
+          text: "{value.formatNumber('#.')}",
+          fill: am5.color(0xffffff),
+          populateText: true,
+          centerX: am5.p50,
+          centerY: am5.p50,
+          textAlign: "center"
+        }),
+        dynamic: true
+      });
+    });
+    
+    
+    
+    // minValue and maxValue must be set for the animations to work
+    bubbleSeries.set("heatRules", [
+      {
+        target: circleTemplate,
+        dataField: "value",
+        min: 10,
+        max: 50,
+        minValue: 0,
+        maxValue: 1000,
+        key: "radius"
+      }
+    ]);
+    
+    bubbleSeries.data.setAll(data);
+    
+    updateData();
+    setInterval(function() {
+      updateData();
+    }, 2000)
+    
+    function updateData() {
+      for (var i = 0; i < bubbleSeries.dataItems.length; i++) {
+        bubbleSeries.data.setIndex(i, { value: Math.round(Math.random() * 100), id: data[i].id, name: data[i].name })
+      }
+    }
+    
+    
+    }); // end am5.ready()
+    </script>
+
+
+<!-- Any Chart  -->
+<script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-cartesian.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-base.min.js"></script>
+
+
+<script>
+    // create data
+var data = [
+['Jan', 1],
+['Feb', 5],
+['Mar', 3],
+['Apr', 6],
+['May', 4],
+['Jun', 6],
+['Jul', 3],
+['Aug', 5],
+['Sep', 4],
+['Oct', 3],
+['Nov', 5],
+['Dec', 1]
+];
+
+// create a chart
+chart = anychart.area();
+
+// create a spline area series and set the data
+var series = chart.splineArea(data);
+// series.color('red ')
+
+// set the container id
+chart.container("chart");
+
+// initiate drawing the chart
+chart.draw();
+</script>
+</body>
+</html>
